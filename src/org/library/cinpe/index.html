@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>登录图书馆0 0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">        .divForm {
+        text-align: center;
+    }    </style>
+</head>
+<body>
+
+<h1>#1 学而时习之，不亦悦乎！----------by 孔子</h1>
+<h2>#2 人的精神有三种境界：骆驼、狮子和婴儿。
+    第一境界骆驼，忍辱负重，被动地听命于别人或命运的安排；
+    第二境界狮子，把被动变成主动，由“你应该”到“我要”，一切由我主动争取，主动负起人生责任；
+    第三境界婴儿 ，这是一种 “我是”的状态，活在当下，享受现在的一切。
+    ----------by 采尼</h2>
+<h2>#3 真的男人，敢于追求星辰大海，敢于骚扰女同事!----------by 鲁迅</h2>
+<h6>#4 鲁迅:我没说过这话,不过我觉得言之有理!----------by 鲁迅</h6>
+<h6>#5 3楼66666----------by 陀思妥耶夫斯基</h6>
+<h6>#6 LZSB----------by 托尔斯泰</h6>
+<h6>#7 LSSB----------by 孔子</h6>
+<div class="divForm">
+    <form method="post" action="http://localhost:10160/index.html" enctype="multipart/form-data" accept-charset="UTF-8">
+        用户名:<input type="text" name="uname" id="uname"/>
+        书名:<input type="text" name="bookname" id="bookname"/>
+
+        我要:<select name="todo" id="todo" typeof="text" style="color: blue" >
+        <option value="0" style="color: blueviolet" >借书</option>
+        <option value="1" style="color: blueviolet">还书</option>
+        <option value="2" style="color: cornflowerblue">增加</option>
+        <option value="3" style="color:red">去除</option>
+    </select>
+
+        <input type="submit" value="提交"/>
+    </form>
+    <table typeof="text" border="1" align="center">
+        <tr ><Font color="blue">这里添加注释</Font></tr>
+        <tr bgcolor="#00fa9a">
+            <td>书名</td>
+            <td>所有者</td>
+            <td>状态</td>
+            <td>借阅者</td>
+            <td>上次操作时间</td>
+        </tr>
+        <tr bgcolor="#90ee90">
+            <td><font color="#8a2be2"
+                      onclick="document.getElementById('bookname').value = this.innerHTML">钢铁是怎样炼成的</font></td>
+            <td><font color="#6495ed" onclick="document.getElementById('bookname').value = this.innerHTML">爱因斯坦</font>
+            </td>
+            <td align="center">借出</td>
+            <td><font color="6495ed" onclick="document.getElementById('bookname').value = this.innerHTML">阿不思邓布利多</font>
+            </td>
+            <td>2019-8-14</td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
